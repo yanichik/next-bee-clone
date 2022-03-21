@@ -1,0 +1,56 @@
+@font-face {
+	src: url("../../assets/fonts/AvertaDemoPECuttedDemo-Regular.otf");
+	font-family: Averta;
+}
+
+.partone {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	max-width: 83.3333%;
+	margin: 0% 29%;
+	margin-top: 4%;
+	padding: 0;
+}
+.title {
+	box-sizing: border-box;
+	display: inline-block;
+	color: rgb(43, 51, 74);
+	font-family: Averta;
+	font-size: 52.8px;
+	font-weight: 900;
+	padding: 0;
+	margin: 10px 0px;
+}
+
+h4 {
+	box-sizing: border-box;
+	display: inline-block;
+	color: rgb(43, 51, 74);
+	font-family: Averta;
+	font-size: 24px;
+	font-weight: 900;
+	padding: 0;
+	margin: 10px 0px;
+}
+
+p {
+	box-sizing: border-box;
+	display: inline-block;
+	color: rgb(102, 109, 128);
+	font-family: Averta;
+	font-size: 17.6px;
+	font-weight: lighter;
+	padding: 0;
+	margin: 10px 0px;
+}
+
+/* .arrow {
+	display: inline-flex;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid black;
+} */

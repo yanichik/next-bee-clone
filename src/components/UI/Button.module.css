@@ -1,0 +1,109 @@
+@font-face {
+	src: url("../../assets/fonts/AvertaDemoPECuttedDemo-Regular.otf");
+	font-family: Averta;
+}
+
+.button_rectangle {
+	display: inline-block;
+	padding: 7px 20px;
+	font-family: Averta;
+	font-size: 1rem;
+	font-weight: 400;
+	color: white;
+	background-color: #7c9d19;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+	/* transition: all 0s none; */
+}
+
+.button_rectangle:hover {
+	transition: background-color 0.2s ease-in-out;
+	background-color: #fa9a00;
+}
+
+.button_rectangle:active {
+	background-color: #6610f2;
+	border: solid #007bff 3px;
+	transition: background-color, border 0.1s ease-in-out;
+}
+
+.header_request_demo {
+	height: 35px;
+	margin: 0px;
+	margin-left: 7px;
+}
+
+.button_oval_orange {
+	display: inline-block;
+
+	padding: 7px 20px;
+	font-family: Averta;
+	font-size: 1rem;
+	font-weight: 400;
+	color: white;
+	background-color: #fa9a00;
+	border: 0px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.button_oval_orange:hover {
+	transition: background-color 0.5s ease-out;
+	background-color: #7c9d19;
+}
+
+.button_oval_orange:active {
+	background-color: #6610f2;
+	border: solid #007bff 3px;
+}
+
+.button_oval_green {
+	display: inline-block;
+	padding: 7px 20px;
+	font-family: Averta;
+	font-size: 1rem;
+	font-weight: 400;
+	color: white;
+	background-color: #7c9d19;
+	border: 0px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.button_oval_green:hover {
+	transition: background-color 0.5s ease-out;
+	background-color: #fa9a00;
+}
+
+.button_oval_green:active {
+	background-color: #6610f2;
+	border: solid #007bff 3px;
+}
+
+.button_oval_white {
+	display: inline-block;
+	padding: 7px 20px;
+	font-family: Averta;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #7c9d19;
+	background-color: #ffffff;
+	border: 1.5px solid #7c9d19;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.button_oval_white:hover {
+	transition: background-color 0.5s ease-out;
+	background-color: #7c9d19;
+	color: #ffffff;
+}
+
+.button_oval_white:active {
+	background-color: #7c9d19;
+}
+
+.request_free_demo{
+	padding: 15px 35px;
+}

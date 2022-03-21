@@ -1,0 +1,46 @@
+@font-face {
+	src: url("../../assets/fonts/AvertaDemoPECuttedDemo-Regular.otf");
+	font-family: Averta;
+}
+
+.free_demo_modal_bg {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+.free_demo_modal_card {
+	width: 490px;
+	height: 535px;
+	margin-top: 11%;
+	overflow: hidden;
+}
+
+.personal_details {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr auto;
+}
+
+.x_close_modal {
+	display: grid;
+	justify-content: end;
+	margin-top: -5px;
+	margin-right: -5px;
+}
+
+.x_close_modal span {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-family: Averta;
+	color: #ffffff;
+	background-color: rgb(43, 51, 74);
+}

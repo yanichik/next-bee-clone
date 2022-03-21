@@ -1,0 +1,19 @@
+.parttwo {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	max-width: 83.3333%;
+	margin: 0% 29%;
+	margin-top: 4%;
+	padding: 0;
+}
+
+
+/* .amazon {
+
+} */
+
+.amazon_img {
+  margin: 15px 0px;
+}
