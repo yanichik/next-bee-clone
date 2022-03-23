@@ -8,9 +8,9 @@ import bee from "../../assets/bee.png";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 const PartOne = (props) => {
-	const viewTerms = ()=>{
+	const viewTerms = () => {
 		props.onViewTerms();
-	}
+	};
 	const cardClasses = `${styles.amazon}`;
 	return (
 		<div className={styles.parttwo}>
@@ -18,22 +18,27 @@ const PartOne = (props) => {
 				<div className={styles.amazon_img}>
 					<img src={amazon_card200} alt="Amazon Card" />
 				</div>
-				<p className>We stand by our Best Price Guarantee!</p>
-				<p>
+				<p className={styles.price_guarantee}>
+					We stand by our Best Price Guarantee!
+				</p>
+				<p className={styles.checkmark_items}>
 					<span>
 						<img src={check_icon} alt="Check" />
 					</span>
 					Fees of $1 Per 1000 Tracked Activities Means 400%+ ROI
 				</p>
-				<p>
+				<p className={styles.checkmark_items}>
 					<span>
 						<img src={check_icon} alt="Check" />
 					</span>
 					30% Better Results & Savings of 70%+ from Any Competitor
 				</p>
 				<div className={styles.bottom_part_2}>
-					Show Us a Better Quote or a Better Solution - We will Give You a $200
-					Gift Card <Button onClick={viewTerms}>View Terms</Button>
+					<div className={styles.view_terms}>
+						Show Us a Better Quote or a Better Solution - We will Give You
+						<br /> a $200 Gift Card{" "}
+						<Button onClick={viewTerms}>View Terms</Button>
+					</div>
 					<div>
 						<img src={bee} alt="Bee" />
 					</div>

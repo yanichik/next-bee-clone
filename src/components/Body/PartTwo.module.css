@@ -10,17 +10,25 @@
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.amazon p {
+.checkmark_items {
 	font-size: 16px;
 	color: #666d80;
+	font-weight: 400;
+	margin: 2px 20px;
+}
+
+.price_guarantee {
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #2b334a;
 }
 
 .amazon_img {
 	margin-top: 15px;
-	margin-bottom: 8px;
+	margin-bottom: -2px;
 }
 
 span img {
@@ -28,11 +36,30 @@ span img {
 }
 
 .bottom_part_2 {
-	margin-top: 10px;
+	margin-top: 18px;
 	padding-top: 16px;
 	border-top: 1px solid #e1e1e3;
+}
+.view_terms {
+	margin-top: 10px;
 	font-family: Averta;
 	font-size: 14px;
+	font-weight: 500;
+	line-height: 0px;
 	color: #6a8100;
 	font-style: italic;
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: Averta;
+	font-size: 11px;
+	font-style: italic;
+  /*input has OS specific font-family*/
+  color: #999;
+  text-decoration: underline;
+  cursor: pointer;
 }
