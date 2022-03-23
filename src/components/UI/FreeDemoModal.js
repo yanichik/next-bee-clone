@@ -1,8 +1,17 @@
 import Card from "./Card";
 import styles from "./FreeDemoModal.module.css";
+import buttonStyles from "../UI/Button.module.css";
 import Button from "./Button";
 
 const FreeDemoModal = (props) => {
+	const modalCardClasses = props.modalState
+		? `${styles.free_demo_modal_card} ${styles.on_screen}`
+		: `${styles.free_demo_modal_card} ${styles.off_screen}`;
+
+	const modalBgClasses = props.modalState
+		? `${styles.free_demo_modal_bg}`
+		: `${styles.free_demo_modal_bg_blank}`;
+
 	const handleChildElementClick = (e) => {
 		e.stopPropagation();
 	};
@@ -10,55 +19,74 @@ const FreeDemoModal = (props) => {
 		props.onCloseFreeDemoModal();
 	};
 	const submitHandler = () => {};
+
+	console.log(props.modalState);
+	console.log(modalBgClasses);
 	return (
-		<div className={styles.free_demo_modal_bg} onClick={closeFreeDemoModal}>
-			<Card
-				onClick={handleChildElementClick}
-				classes={`${styles.free_demo_modal_card}`}
-			>
+		<div className={modalBgClasses} onClick={closeFreeDemoModal}>
+			<Card onClick={handleChildElementClick} classes={modalCardClasses}>
 				<div className={styles.x_close_modal}>
+					<h2 style={{ marginRight: "25px", marginTop: "30px", fontSize: '22px' }}>
+						Get the Program Setup On Your Terms
+					</h2>
 					<span onClick={closeFreeDemoModal}>x</span>
 				</div>
-				<h2>Get the Program Setup On Your Terms</h2>
-				<p>
-					Step 1 - Submit Requirements
-					<span>
-						<Button>1-800-547-1618</Button>
-					</span>
-				</p>
+				<div className={styles.content}>
+					<p className={styles.step_1}>
+						Step 1 - Submit Requirements
+						<a href="tel:1-800-547-1618">1-800-547-1618</a>
+					</p>
 
-				<form onSubmit={submitHandler}>
-					<div className={styles.personal_details}>
-						<input type="text" placeholder="First Name*" name="first_name" />
-						<input type="text" placeholder="Last Name*" name="last_name" />
-						<input type="text" placeholder="Your Email*" name="email" />
-						<input type="text" placeholder="Your Phone*" name="phone_number" />
-					</div>
-					<div className={styles.requirement_details}>
-						<textarea
-							name="requirement_details"
-							id="requirement_details"
-							cols="60"
-							rows="5"
-							placeholder="Requirement Details*"
-						/>
-					</div>
-					<div className="step_2">
-						Step 2 - Schedule Appointment
-						<Button classes={styles.button_rectangle} type="submit">
-							Next
-						</Button>
-					</div>
-				</form>
+					<form onSubmit={submitHandler}>
+						<div className={styles.personal_details}>
+							<input
+								type="text"
+								placeholder="First Name*"
+								name="first_name"
+								id={styles.first_name}
+							/>
+							<input
+								type="text"
+								placeholder="Last Name*"
+								name="last_name"
+								id={styles.last_name}
+							/>
+							<input
+								type="text"
+								placeholder="Your Email*"
+								name="email"
+								id={styles.email}
+							/>
+							<input
+								type="text"
+								placeholder="Your Phone*"
+								name="phone_number"
+								id={styles.phone_number}
+							/>
+						</div>
+						<div className={styles.requirement_details}>
+							<textarea
+								name="requirement_details"
+								id="requirement_details"
+								rows="7"
+								placeholder="Requirement Details*"
+							/>
+						</div>
+						<div className={styles.step_2}>
+							<div className={styles.step_2_schedule}>
+								Step 2 - Schedule Appointment
+							</div>
+							<Button
+								buttonClasses={buttonStyles.button_rectangle_next}
+								// type="submit"
+							>
+								Next
+							</Button>
+						</div>
+					</form>
+				</div>
 			</Card>
 		</div>
-		// <div className={styles.free_demo_modal_bg} onClick={closeFreeDemoModal}>
-		// 	<div onClick={handleChildElementClick} className={styles.free_demo_modal}>
-		// 		<p>something 1</p>
-		// 		<button onClick={closeFreeDemoModal}>Something</button>
-		// 		<p>something 2</p>
-		// 	</div>
-		// </div>
 	);
 };
 export default FreeDemoModal;

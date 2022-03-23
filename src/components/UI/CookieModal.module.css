@@ -10,7 +10,7 @@
 	object-fit: cover;
   border-radius: 50%;
   border: 14px solid rgb(43, 51, 74);
-  z-index: 1000;
+  z-index: 95;
   margin: 0;
   padding: 0;
 }

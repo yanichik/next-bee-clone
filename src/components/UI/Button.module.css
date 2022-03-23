@@ -3,6 +3,23 @@
 	font-family: Averta;
 }
 
+.button_rectangle_next {
+	display: inline-block;
+	/* padding: 10px 20px; */
+	font-family: Averta;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	background-color: #fa9a00;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button_rectangle_next:active {
+	outline: 3px solid rgba(191, 222, 255);
+}
+
 .button_rectangle {
 	display: inline-block;
 	padding: 7px 20px;
@@ -14,7 +31,6 @@
 	border: 0px;
 	border-radius: 5px;
 	cursor: pointer;
-	/* transition: all 0s none; */
 }
 
 .button_rectangle:hover {
@@ -104,6 +120,6 @@
 	background-color: #7c9d19;
 }
 
-.request_free_demo{
+.request_free_demo {
 	padding: 15px 35px;
 }

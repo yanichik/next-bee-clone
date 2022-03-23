@@ -1,19 +1,38 @@
 .parttwo {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
 	max-width: 83.3333%;
-	margin: 0% 29%;
+	margin: 0% 26%;
 	margin-top: 4%;
 	padding: 0;
 }
 
+.amazon {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-/* .amazon {
-
-} */
+.amazon p {
+	font-size: 16px;
+	color: #666d80;
+}
 
 .amazon_img {
-  margin: 15px 0px;
+	margin-top: 15px;
+	margin-bottom: 8px;
+}
+
+span img {
+	margin-right: 3px;
+}
+
+.bottom_part_2 {
+	margin-top: 10px;
+	padding-top: 16px;
+	border-top: 1px solid #e1e1e3;
+	font-family: Averta;
+	font-size: 14px;
+	color: #6a8100;
+	font-style: italic;
 }
