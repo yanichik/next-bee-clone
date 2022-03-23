@@ -24,7 +24,9 @@ const FreeDemoModal = (props) => {
 		<div className={modalBgClasses} onClick={closeFreeDemoModal}>
 			<Card onClick={handleChildElementClick} classes={modalCardClasses}>
 				<div className={styles.x_close_modal}>
-					<h2 style={{ marginRight: "25px", marginTop: "30px", fontSize: '22px' }}>
+					<h2
+						style={{ marginRight: "25px", marginTop: "30px", fontSize: "22px" }}
+					>
 						Get the Program Setup On Your Terms
 					</h2>
 					<span onClick={closeFreeDemoModal}>x</span>
@@ -72,7 +74,8 @@ const FreeDemoModal = (props) => {
 						</div>
 						<div className={styles.step_2}>
 							<div className={styles.step_2_schedule}>
-								Step 2 - Schedule Appointment
+								Step 2 - Schedule <br />
+								Appointment
 							</div>
 							<Button
 								buttonClasses={buttonStyles.button_rectangle_next}
