@@ -20,8 +20,6 @@ const FreeDemoModal = (props) => {
 	};
 	const submitHandler = () => {};
 
-	console.log(props.modalState);
-	console.log(modalBgClasses);
 	return (
 		<div className={modalBgClasses} onClick={closeFreeDemoModal}>
 			<Card onClick={handleChildElementClick} classes={modalCardClasses}>
@@ -68,7 +66,7 @@ const FreeDemoModal = (props) => {
 							<textarea
 								name="requirement_details"
 								id="requirement_details"
-								rows="7"
+								rows="6"
 								placeholder="Requirement Details*"
 							/>
 						</div>

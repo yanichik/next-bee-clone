@@ -6,6 +6,8 @@
 .free_demo_modal_bg {
 	position: fixed;
 	display: flex;
+	top: 0;
+	left: 0;
 	justify-content: center;
 	width: 100%;
 	height: 100%;
@@ -18,22 +20,25 @@
 	align-items: center;
 	position: absolute;
 	width: 100%;
+	height: 100%;
 	z-index: -1000;
 }
 
 .on_screen {
-	transform: translateY(0px);
-	transition: all 1s ease-out;
+	transform: translateY(20%);
+	/* transition: all 1s ease-out; */
+	transition: all 1s cubic-bezier(.03,.89,.96,1)
 }
 
 .off_screen {
-	transform: translateY(-1000px);
-	transition: all 1.2s ease-out;
+	transform: translateY(-800px);
+	transition: all 1s ease-out;
+	/* transition: all 1s cubic-bezier(.03,.89,.96,1) */
 }
 
 .free_demo_modal_card {
 	width: 500px;
-	height: 600px;
+	height: 540px;
 	margin-top: 13%;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -75,8 +80,8 @@ p {
 }
 
 .personal_details input {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 	height: 50px;
 	color: #495057;
 	background-color: #f0f0f8;
@@ -110,8 +115,8 @@ p {
 textarea {
 	box-sizing: border-box;
 	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 	color: #495057;
 	background-color: #f0f0f8;
 	border: none;
@@ -157,7 +162,7 @@ textarea:focus {
 	justify-content: space-between;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .step_1 a {
 	text-decoration: none;
@@ -172,7 +177,7 @@ textarea:focus {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 30px;
-	margin-top: 45px;
+	margin-top: 40px;
 	font-family: Averta;
 	color: #666d80;
 }
